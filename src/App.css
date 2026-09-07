@@ -1,0 +1,117 @@
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-template {
+  min-height: 100vh;
+}
+
+.portfolio-action-link {
+  min-height: 2.5rem;
+  max-width: 100%;
+  padding: 0.5rem 1rem;
+  line-height: 1.35;
+}
+
+.portfolio-action-link p {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.portfolio-icon-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  min-width: 2.5rem;
+  height: 2.5rem;
+}
+
+.engineering-grid {
+  position: relative;
+  isolation: isolate;
+}
+
+.engineering-grid::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, rgba(80, 132, 218, 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(80, 132, 218, 0.12) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: radial-gradient(circle at center, black 34%, transparent 92%);
+  opacity: 0.55;
+}
+
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseLine {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.reveal-up {
+  animation: revealUp 0.75s ease-out both;
+}
+
+.delay-1 {
+  animation-delay: 0.12s;
+}
+
+.delay-2 {
+  animation-delay: 0.24s;
+}
+
+.delay-3 {
+  animation-delay: 0.36s;
+}
+
+.pulse-line {
+  animation: pulseLine 2.4s ease-in-out infinite;
+}
+
+.float-soft {
+  animation: drift 5s ease-in-out infinite;
+}
+
+[data-layout-mode="multi"] [data-testid="hero-next-section"],
+[data-layout-mode="multi"] [data-testid$="-next-section"] {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-up,
+  .pulse-line,
+  .float-soft {
+    animation: none;
+  }
+}

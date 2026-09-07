@@ -1,0 +1,921 @@
+.portfolio-template-business {
+  --bg-900: #10283f;
+  --bg-800: #153652;
+  --bg-700: #1f4a70;
+  --surface-900: rgba(21, 54, 82, 0.88);
+  --surface-800: rgba(31, 74, 112, 0.94);
+  --line-700: rgba(102, 163, 191, 0.24);
+  --line-500: rgba(200, 223, 219, 0.46);
+  --text-100: #fcf2e5;
+  --text-300: #e8e0d5;
+  --accent-300: #ffa083;
+  --accent-400: #66a3bf;
+  --accent-500: #3368a0;
+  --primary-bg: #c8dfdb;
+  --primary-hover-bg: #fcf2e5;
+  --primary-text: #524646;
+  --control-bg: rgba(21, 54, 82, 0.9);
+  --control-bg-soft: rgba(51, 104, 160, 0.28);
+  --control-hover-bg: rgba(51, 104, 160, 0.58);
+  --active-nav-bg: rgba(102, 163, 191, 0.16);
+  --active-nav-border: rgba(200, 223, 219, 0.64);
+  --accent-control-bg: rgba(102, 163, 191, 0.13);
+  --input-bg: rgba(16, 40, 63, 0.78);
+  --media-shell-bg: #10283f;
+  --modal-overlay-bg: rgba(8, 23, 36, 0.86);
+  --focus-border: #c8dfdb;
+  --focus-ring: 0 0 0 3px rgba(102, 163, 191, 0.34);
+  position: relative;
+  overflow: clip;
+  color: var(--text-100);
+  background: linear-gradient(145deg, var(--bg-900), var(--bg-800));
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.light .portfolio-template-business {
+  --bg-900: #f2efe7;
+  --bg-800: #c8dfdb;
+  --bg-700: #a8ccc9;
+  --surface-900: rgba(242, 239, 231, 0.9);
+  --surface-800: rgba(200, 223, 219, 0.94);
+  --line-700: rgba(51, 104, 160, 0.22);
+  --line-500: rgba(51, 104, 160, 0.48);
+  --text-100: #524646;
+  --text-300: #6a665c;
+  --accent-300: #b83d22;
+  --accent-400: #285681;
+  --accent-500: #1f4a70;
+  --primary-bg: #3368a0;
+  --primary-hover-bg: #285681;
+  --primary-text: #fcf2e5;
+  --control-bg: rgba(242, 239, 231, 0.94);
+  --control-bg-soft: rgba(200, 223, 219, 0.62);
+  --control-hover-bg: rgba(200, 223, 219, 0.94);
+  --active-nav-bg: rgba(102, 163, 191, 0.18);
+  --active-nav-border: rgba(51, 104, 160, 0.48);
+  --accent-control-bg: rgba(102, 163, 191, 0.13);
+  --input-bg: rgba(242, 239, 231, 0.96);
+  --media-shell-bg: #c8dfdb;
+  --modal-overlay-bg: rgba(16, 40, 63, 0.5);
+  --focus-border: #3368a0;
+  --focus-ring: 0 0 0 3px rgba(102, 163, 191, 0.38);
+}
+
+.portfolio-template-business .business-background {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.portfolio-template-business .business-background-grid {
+  position: absolute;
+  inset: -12%;
+  opacity: 0.34;
+  transform: perspective(750px) rotateX(62deg) translateY(-18%);
+  transform-origin: center top;
+  background-image:
+    linear-gradient(var(--line-700) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line-700) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, black, transparent 82%);
+}
+
+.portfolio-template-business .business-background-glow {
+  position: absolute;
+  width: min(60rem, 72vw);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.17;
+  background: var(--accent-400);
+}
+
+.portfolio-template-business .business-background-glow-a {
+  top: -28rem;
+  right: -18rem;
+}
+.portfolio-template-business .business-background-glow-b {
+  bottom: -34rem;
+  left: -24rem;
+  opacity: 0.1;
+}
+.portfolio-template-business .business-casebook-header,
+.portfolio-template-business .business-casebook-rail {
+  backdrop-filter: blur(18px);
+}
+.portfolio-template-business .business-casebook-header {
+  font-family: "Space Grotesk", sans-serif;
+}
+.portfolio-template-business .business-casebook-layout {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-width: 0;
+  max-width: 100vw;
+}
+.portfolio-template-business .business-casebook-document {
+  width: 100%;
+  min-width: 0;
+  max-width: 100vw;
+  overflow-x: clip;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--surface-900) 54%, transparent)
+  );
+}
+.portfolio-template-business .business-skip-link {
+  position: fixed;
+  top: -5rem;
+  left: 1rem;
+  z-index: 2200;
+  padding: 0.7rem 1rem;
+  background: var(--text-100);
+  color: var(--bg-900);
+}
+.portfolio-template-business .business-skip-link:focus {
+  top: 1rem;
+}
+.portfolio-template-business :is(a, button, input, textarea):focus-visible {
+  outline: 2px solid var(--focus-border);
+  outline-offset: 3px;
+  box-shadow: var(--focus-ring);
+}
+
+.portfolio-template-business .business-casebook-section {
+  width: min(100%, 1180px);
+  margin-inline: auto;
+  padding: clamp(5rem, 9vw, 9rem) clamp(1rem, 4vw, 3.5rem);
+}
+
+.portfolio-template-business .business-subject-record {
+  width: 100%;
+  max-width: 20rem;
+  justify-self: center;
+}
+
+.portfolio-template-business .business-chapter-heading {
+  display: grid;
+  grid-template-columns: 9rem minmax(0, 1fr);
+  gap: 1.5rem 3rem;
+  border-bottom: 2px solid var(--text-100);
+  padding-bottom: 2rem;
+}
+.portfolio-template-business .business-chapter-kicker {
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  color: var(--accent-300);
+  font:
+    700 0.72rem/1.4 "Space Grotesk",
+    sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+.portfolio-template-business .business-section-title {
+  font-size: clamp(2.35rem, 4.8vw, 4.5rem) !important;
+  line-height: 0.96 !important;
+  letter-spacing: -0.055em;
+}
+.portfolio-template-business .business-chapter-intro {
+  max-width: 48rem;
+  color: var(--text-300);
+  font-size: 1.08rem;
+  line-height: 1.85;
+}
+
+.portfolio-template-business .business-ledger {
+  margin: 3rem 0 0;
+  padding: 0;
+  border-top: 1px solid var(--line-700);
+}
+.portfolio-template-business .business-ledger-row {
+  display: grid;
+  grid-template-columns: 4rem minmax(13rem, 0.8fr) minmax(13rem, 0.55fr) minmax(
+      18rem,
+      1fr
+    );
+  gap: 1.25rem;
+  align-items: start;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--line-700);
+}
+.portfolio-template-business .business-ledger-meta {
+  color: var(--accent-300);
+  font:
+    700 0.72rem/1.5 "Space Grotesk",
+    sans-serif;
+}
+.portfolio-template-business .business-ledger-logo {
+  width: 3.4rem;
+  height: 3.4rem;
+  object-fit: contain;
+  background: white;
+  padding: 0.35rem;
+}
+.portfolio-template-business .business-ledger-title h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+.portfolio-template-business .business-ledger-title p {
+  color: var(--text-300);
+  line-height: 1.7;
+}
+
+.portfolio-template-business .business-experience-entry {
+  display: grid;
+  grid-template-columns: minmax(13rem, 0.65fr) 8rem minmax(20rem, 1fr);
+  gap: 1.5rem;
+  padding: 2.4rem 0;
+  border-bottom: 1px solid var(--line-700);
+}
+.portfolio-template-business .business-experience-role h3 {
+  font-size: 1.7rem;
+}
+.portfolio-template-business .business-experience-role p,
+.portfolio-template-business .business-experience-period {
+  color: var(--accent-300);
+}
+.portfolio-template-business .business-detail-list {
+  display: grid;
+  gap: 0.7rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.portfolio-template-business .business-detail-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.7rem;
+  align-items: start;
+  padding: 0.72rem 0.8rem;
+  color: var(--text-300);
+  background: color-mix(in srgb, var(--surface-900) 68%, transparent);
+  border-left: 2px solid var(--line-500);
+  line-height: 1.65;
+}
+.portfolio-template-business .business-detail-copy {
+  display: block;
+}
+.portfolio-template-business .business-detail-label {
+  display: block;
+  margin-bottom: 0.22rem;
+  color: var(--accent-300);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+.portfolio-template-business .business-detail-value {
+  display: block;
+}
+
+.portfolio-template-business .business-awards-table {
+  margin-top: 3rem;
+}
+.portfolio-template-business .business-award-row {
+  display: grid;
+  grid-template-columns: 3.5rem minmax(14rem, 0.8fr) 7rem 7rem minmax(
+      16rem,
+      1fr
+    );
+  gap: 1.2rem;
+  align-items: center;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid var(--line-700);
+}
+.portfolio-template-business .business-award-mark {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+}
+.portfolio-template-business .business-award-tag,
+.portfolio-template-business .business-award-year {
+  color: var(--accent-300);
+  font:
+    700 0.7rem "Space Grotesk",
+    sans-serif;
+}
+.portfolio-template-business .business-award-title h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.portfolio-template-business .business-award-title p,
+.portfolio-template-business .business-award-description {
+  color: var(--text-300);
+}
+
+.portfolio-template-business .business-case-image {
+  object-position: left center;
+}
+
+.portfolio-template-business .business-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin-top: 3rem;
+  align-items: stretch;
+}
+.portfolio-template-business .business-gallery-plate {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  height: 100%;
+  color: inherit;
+  background: var(--surface-900);
+  border: 1px solid var(--line-700);
+  padding: 0.7rem;
+  text-align: left;
+  cursor: pointer;
+}
+.portfolio-template-business .business-gallery-image-wrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+.portfolio-template-business .business-gallery-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+.portfolio-template-business .business-gallery-plate:hover img {
+  transform: scale(1.025);
+}
+.portfolio-template-business .business-gallery-plate h3 {
+  font-size: 1.3rem;
+  margin: 1rem 0 0.4rem;
+}
+.portfolio-template-business .business-gallery-plate > p {
+  color: var(--text-300);
+  line-height: 1.6;
+}
+.business-gallery-backdrop {
+  background: var(--modal-overlay-bg);
+}
+.business-gallery-dialog {
+  max-width: 54rem;
+  background: var(--surface-800);
+  color: var(--text-100);
+  border: 1px solid var(--line-500);
+}
+
+.portfolio-template-business .business-journal-masthead {
+  display: grid;
+  grid-template-columns: 10rem minmax(0, 1fr);
+  gap: 1rem 3rem;
+  border-block: 1px solid var(--text-100);
+  padding: 2rem 0;
+}
+.portfolio-template-business .business-journal-masthead h2 {
+  font-size: clamp(2.35rem, 4.8vw, 4.5rem);
+  line-height: 0.96;
+  letter-spacing: -0.07em;
+}
+.portfolio-template-business .business-journal-masthead > p:last-child {
+  grid-column: 2;
+  max-width: 46rem;
+  color: var(--text-300);
+}
+.portfolio-template-business .business-journal-lead {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 1.5rem 0 5rem;
+  align-items: stretch;
+}
+.portfolio-template-business .business-subsection-heading {
+  display: grid;
+  grid-template-columns: 10rem minmax(0, 1fr);
+  gap: 1rem 3rem;
+  align-items: end;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line-700);
+}
+.portfolio-template-business .business-subsection-heading > p {
+  color: var(--accent-300);
+  font:
+    700 0.72rem "Space Grotesk",
+    sans-serif;
+  letter-spacing: 0.07em;
+}
+.portfolio-template-business .business-subsection-heading h3 {
+  color: var(--text-100);
+  font-size: clamp(1.45rem, 2.4vw, 2rem);
+}
+.portfolio-template-business .business-video-feature {
+  display: flex;
+  min-width: 0;
+  height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--surface-900);
+  border: 1px solid var(--line-700);
+}
+.portfolio-template-business .business-video-frame {
+  aspect-ratio: 16/9;
+  flex: none;
+}
+.portfolio-template-business .business-video-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.portfolio-template-business .business-video-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.25rem;
+}
+.portfolio-template-business .business-video-feature h3 {
+  color: var(--text-100);
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+.portfolio-template-business .business-inline-details {
+  display: grid;
+  gap: 0.48rem;
+}
+.portfolio-template-business .business-inline-detail {
+  color: var(--text-300);
+  line-height: 1.65;
+}
+.portfolio-template-business .business-inline-label {
+  color: var(--accent-300);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+.portfolio-template-business .business-inline-divider {
+  margin-inline: 0.6rem;
+  color: var(--line-500);
+}
+.portfolio-template-business .business-video-description {
+  flex: 1;
+  margin-top: 0.9rem;
+}
+.portfolio-template-business .business-video-action {
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line-700);
+}
+.portfolio-template-business .business-writing-entry {
+  display: grid;
+  grid-template-columns: 10rem minmax(0, 1fr) 7rem;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--line-700);
+}
+.portfolio-template-business .business-writing-entry img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+.portfolio-template-business .business-writing-copy {
+  display: grid;
+  gap: 0.8rem;
+}
+.portfolio-template-business .business-writing-copy h3 {
+  font-size: 1.4rem;
+}
+.portfolio-template-business .business-skill-row {
+  display: grid;
+  grid-template-columns: 13rem minmax(0, 1fr);
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--line-700);
+}
+.portfolio-template-business .business-skill-row > h3 {
+  font-size: 1.35rem;
+}
+.portfolio-template-business .business-skill-row ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.portfolio-template-business .business-skill-row li {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  background: var(--surface-900);
+  border: 1px solid var(--line-700);
+  padding: 0.45rem 0.65rem;
+}
+.portfolio-template-business .business-certificate-section {
+  margin-top: 5rem;
+}
+.portfolio-template-business .business-certificate-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.7fr);
+  gap: 2rem;
+  align-items: end;
+  padding-block: 1.5rem;
+  border-block: 1px solid var(--line-700);
+}
+.portfolio-template-business .business-certificate-heading > div > p {
+  color: var(--accent-300);
+  font:
+    700 0.72rem "Space Grotesk",
+    sans-serif;
+  letter-spacing: 0.07em;
+}
+.portfolio-template-business .business-certificate-heading h3 {
+  margin-top: 0.35rem;
+  color: var(--text-100);
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+}
+.portfolio-template-business .business-certificate-heading > p {
+  color: var(--text-300);
+  line-height: 1.65;
+}
+.portfolio-template-business .business-certificate-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+.portfolio-template-business .business-certificate-card {
+  display: flex;
+  min-width: 0;
+  height: 100%;
+  flex-direction: column;
+  padding: 0.7rem;
+  color: inherit;
+  background: var(--surface-900);
+  border: 1px solid var(--line-700);
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+.portfolio-template-business .business-certificate-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--line-500);
+}
+.portfolio-template-business .business-certificate-preview {
+  height: 19rem;
+  overflow: hidden;
+  background: var(--media-shell-bg);
+  border: 1px solid var(--line-700);
+}
+.portfolio-template-business .business-certificate-preview object {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  pointer-events: none;
+}
+.portfolio-template-business .business-certificate-fallback {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 2rem;
+  color: var(--text-300);
+  text-align: center;
+}
+.portfolio-template-business .business-certificate-fallback p:first-child {
+  color: var(--text-100);
+  font-weight: 700;
+}
+.portfolio-template-business .business-certificate-copy {
+  display: grid;
+  gap: 0.8rem;
+  flex: 1;
+  padding: 1rem 0.35rem 0.35rem;
+}
+.portfolio-template-business .business-certificate-title {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+.portfolio-template-business .business-certificate-title > div:last-child > p {
+  color: var(--accent-300);
+  font-size: 0.7rem;
+}
+.portfolio-template-business .business-certificate-title h4 {
+  margin-top: 0.18rem;
+  color: var(--text-100);
+  font-size: 1.05rem;
+}
+.portfolio-template-business .business-certificate-open {
+  margin-top: auto;
+  padding-top: 0.8rem;
+  color: var(--accent-300);
+  border-top: 1px solid var(--line-700);
+  font-weight: 700;
+}
+
+.portfolio-template-business .business-contact-layout {
+  display: grid;
+  grid-template-columns: 0.65fr 1.35fr;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+.portfolio-template-business .business-contact-card {
+  min-height: 20rem;
+  padding: 2rem;
+  background: var(--surface-800);
+  color: var(--text-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.2rem;
+}
+.portfolio-template-business .business-contact-label {
+  font-size: 0.82rem;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.portfolio-template-business .business-contact-email {
+  display: inline-flex;
+  align-self: center;
+  width: fit-content;
+  max-width: 100%;
+  padding: clamp(0.45rem, 1vw, 0.65rem) clamp(0.6rem, 1.4vw, 0.9rem);
+  border: 1px solid var(--line-500);
+  background: var(--accent-500);
+  font-size: clamp(0.88rem, 1.2vw, 1.1rem);
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+.portfolio-template-business .business-contact-location {
+  font-size: 0.95rem;
+}
+.portfolio-template-business .business-contact-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+.portfolio-template-business .business-contact-socials a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.95rem;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--line-500);
+  background: var(--accent-500);
+  color: inherit;
+}
+.portfolio-template-business .business-contact-email:hover,
+.portfolio-template-business .business-contact-socials a:hover {
+  background: var(--accent-500);
+  border-color: currentColor;
+}
+.light .portfolio-template-business .business-contact-card {
+  background: var(--primary-bg);
+  color: var(--primary-text);
+}
+.light .portfolio-template-business .business-contact-email,
+.light .portfolio-template-business .business-contact-socials a {
+  background: var(--primary-hover-bg);
+}
+.light .portfolio-template-business .business-contact-email:hover,
+.light .portfolio-template-business .business-contact-socials a:hover {
+  background: var(--primary-hover-bg);
+  border-color: currentColor;
+}
+.portfolio-template-business .business-contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.4rem;
+}
+.portfolio-template-business .business-contact-form > div:nth-child(n + 3),
+.portfolio-template-business .business-contact-form button {
+  grid-column: 1/-1;
+}
+.portfolio-template-business .business-contact-form label {
+  display: block;
+  color: var(--accent-300);
+  font:
+    700 0.72rem "Space Grotesk",
+    sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.portfolio-template-business .business-contact-form :is(input, textarea) {
+  background: var(--input-bg);
+  border-color: var(--line-500);
+  color: var(--text-100);
+}
+.portfolio-template-business .business-contact-form textarea {
+  min-height: 10rem;
+}
+.portfolio-template-business .business-contact-form button {
+  background: var(--primary-bg);
+  color: var(--primary-text);
+}
+
+.portfolio-template-business .business-publication-page {
+  min-height: 100vh;
+  padding: 8rem clamp(1rem, 5vw, 5rem) 5rem;
+}
+.portfolio-template-business .business-article-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-300);
+  margin-bottom: 2rem;
+}
+.portfolio-template-business .business-publication-article,
+.portfolio-template-business .business-article-not-found {
+  max-width: 64rem;
+  margin: auto;
+  background: var(--surface-900);
+  border: 1px solid var(--line-700);
+  padding: clamp(1.5rem, 5vw, 5rem);
+}
+.portfolio-template-business .business-article-header {
+  display: grid;
+  gap: 1rem;
+  border-bottom: 1px solid var(--line-700);
+  padding-bottom: 2rem;
+}
+.portfolio-template-business .business-article-header h1 {
+  font-size: clamp(2.8rem, 7vw, 6.5rem);
+  line-height: 0.92;
+  letter-spacing: -0.05em;
+}
+.portfolio-template-business .business-article-header p {
+  color: var(--text-300);
+}
+.portfolio-template-business .business-article-figure {
+  margin: 3rem 0;
+}
+.portfolio-template-business .business-article-figure img {
+  width: 100%;
+  max-height: 36rem;
+  object-fit: contain;
+  background: var(--media-shell-bg);
+}
+.portfolio-template-business .business-article-body {
+  max-width: 46rem;
+  margin-inline: auto;
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+.portfolio-template-business .business-article-body :is(h2, h3, h4) {
+  color: var(--text-100);
+  margin: 2.5rem 0 1rem;
+}
+.portfolio-template-business .business-article-body p,
+.portfolio-template-business .business-article-body li {
+  color: var(--text-300);
+  margin-bottom: 1rem;
+}
+.portfolio-template-business .business-article-body blockquote,
+.portfolio-template-business .business-article-body pre {
+  padding: 1rem;
+  background: var(--bg-800);
+  border-left: 3px solid var(--accent-300);
+}
+
+@media (max-width: 75rem) {
+  .portfolio-template-business .business-ledger-row {
+    grid-template-columns: 3.5rem 1fr 1fr;
+  }
+  .portfolio-template-business .business-ledger-row > .business-detail-list {
+    grid-column: 2/-1;
+  }
+  .portfolio-template-business .business-gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .portfolio-template-business .business-award-row {
+    grid-template-columns: 3rem 1fr 7rem;
+  }
+  .portfolio-template-business .business-award-title {
+    grid-column: 2;
+  }
+  .portfolio-template-business .business-award-year {
+    grid-column: 3;
+  }
+  .portfolio-template-business .business-award-tag,
+  .portfolio-template-business .business-award-description {
+    grid-column: 2/-1;
+  }
+}
+
+@media (max-width: 48rem) {
+  .portfolio-template-business,
+  .portfolio-template-business .business-casebook-layout,
+  .portfolio-template-business .business-casebook-document {
+    width: 100vw !important;
+    min-width: 0 !important;
+    max-width: 100vw !important;
+  }
+  .portfolio-template-business .business-casebook-layout {
+    grid-template-columns: minmax(0, 100vw) !important;
+  }
+  .portfolio-template-business .business-casebook-cover h1 {
+    font-size: 2.75rem;
+    overflow-wrap: anywhere;
+  }
+  .portfolio-template-business .business-casebook-header > div {
+    width: 100%;
+    min-width: 0;
+    max-width: 100vw;
+  }
+  .portfolio-template-business [data-testid="business-brand-link"] {
+    width: min(11rem, calc(100vw - 10.5rem)) !important;
+    max-width: min(11rem, calc(100vw - 10.5rem)) !important;
+    flex: 0 1 11rem !important;
+  }
+  .portfolio-template-business .business-casebook-section {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+  .portfolio-template-business .business-background-grid {
+    background-size: 44px 44px;
+    opacity: 0.2;
+  }
+  .portfolio-template-business .business-chapter-heading {
+    grid-template-columns: 1fr;
+  }
+  .portfolio-template-business .business-chapter-kicker {
+    grid-row: auto;
+  }
+  .portfolio-template-business .business-ledger-row {
+    grid-template-columns: 3.5rem minmax(0, 1fr);
+  }
+  .portfolio-template-business .business-experience-entry,
+  .portfolio-template-business .business-award-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .portfolio-template-business .business-ledger-logo {
+    grid-column: 1;
+  }
+  .portfolio-template-business
+    :is(.business-ledger-title, .business-ledger-meta) {
+    grid-column: 2;
+  }
+  .portfolio-template-business
+    :is(
+      .business-experience-role,
+      .business-experience-period,
+      .business-award-title,
+      .business-award-year,
+      .business-award-tag,
+      .business-award-description
+    ) {
+    grid-column: 1;
+  }
+  .portfolio-template-business .business-ledger-row > .business-detail-list {
+    grid-column: 2;
+  }
+  .portfolio-template-business
+    .business-experience-entry
+    > .business-detail-list {
+    grid-column: 1;
+  }
+  .portfolio-template-business .business-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .portfolio-template-business .business-gallery-plate {
+    width: 100%;
+  }
+  .portfolio-template-business .business-journal-masthead,
+  .portfolio-template-business .business-journal-lead,
+  .portfolio-template-business .business-subsection-heading,
+  .portfolio-template-business .business-writing-entry,
+  .portfolio-template-business .business-skill-row,
+  .portfolio-template-business .business-certificate-heading,
+  .portfolio-template-business .business-certificate-gallery,
+  .portfolio-template-business .business-contact-layout,
+  .portfolio-template-business .business-contact-form {
+    grid-template-columns: 1fr;
+  }
+  .portfolio-template-business .business-journal-masthead > p:last-child,
+  .portfolio-template-business .business-contact-form > * {
+    grid-column: 1;
+  }
+  .portfolio-template-business .business-writing-entry img {
+    width: 100%;
+  }
+  .portfolio-template-business .business-certificate-preview {
+    height: 17rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-template-business *,
+  .portfolio-template-business *::before,
+  .portfolio-template-business *::after {
+    scroll-behavior: auto !important;
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+  }
+}
