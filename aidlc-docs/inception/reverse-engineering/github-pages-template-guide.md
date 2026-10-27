@@ -53,7 +53,7 @@ The final guide should include:
 
 - Student-editable content is organized under `src/data/`.
 - Navigation and section descriptions have typed central configuration.
-- Engineering, Neutral, and Business render the same content through distinct structures.
+- Engineering and Business render the same content through distinct structures.
 - `src/data/template.ts` chooses the first-visit default.
 - A shared `Portfolio style` control lets visitors switch in place and persists their browser choice.
 - README and deployment guidance describe customization, verification, and publishing.
@@ -69,6 +69,6 @@ The final guide should include:
 - [ ] Published site URL loads without 404 errors.
 - [ ] Images, PDFs, and YouTube embeds load correctly.
 - [ ] Navigation links scroll to the right sections.
-- [ ] Engineering, Neutral, and Business can be selected from desktop and mobile widths.
+- [ ] Engineering and Business can be selected from desktop and mobile widths.
 - [ ] Style switching preserves the current section or journal route and layout mode.
 - [ ] Contact form opens the expected email client.

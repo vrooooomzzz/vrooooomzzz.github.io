@@ -50,8 +50,11 @@ function Contact() {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    if (!profile.email) return;
     window.location.href = buildMailtoUrl(formData, profile.email);
   };
+
+  if (!profile.email) return null;
 
   return (
     <SectionShell

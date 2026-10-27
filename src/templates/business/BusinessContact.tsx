@@ -24,8 +24,11 @@ function BusinessContact() {
   };
   const submit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    if (!profile.email) return;
     window.location.href = buildMailtoUrl(formData, profile.email);
   };
+
+  if (!profile.email) return null;
 
   return (
     <Box

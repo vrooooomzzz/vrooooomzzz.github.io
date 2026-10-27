@@ -9182,3 +9182,360 @@ For the connect\_channels, please make the color consistent with other component
 **Context**: CONSTRUCTION - Code Generation Part 2 Review Gate
 
 ---
+
+## Duc Tuan Portfolio - User Request and Workspace Detection
+
+**Timestamp**: 2026-10-26T15:51:53Z
+**User Input**: "using ai-dlc, use resume - duc tuan and the newly added zip to build a custom website for him on the theme of data analytics. Please ensure no private credentials is published online on github, only those normal certificates. But you can refer to those credentials for content."
+**AI Response**: "Started the requested AI-DLC workflow; loaded common rules and extension opt-in files, displayed the welcome message, reused existing reverse-engineering context with source checks, and inspected the local résumé, ZIP inventory, and presentation text. Created discovery findings and requirements questions. Added Git ignore rules for local DOCX and ZIP source inputs as the explicitly requested privacy safeguard. No application implementation, commit, push, or deployment. Security Baseline and Property-Based Testing are currently disabled in state; logged their skip and requested new opt-in choices. Private document text was not copied to public documentation."
+**Context**: INCEPTION - Workspace Detection complete; Requirements Analysis answer gate pending.
+
+---
+
+## Duc Tuan Portfolio - Requirements Answer Gate
+
+**Timestamp**: 2026-10-26T15:51:53Z
+**User Input**: "N/A"
+**AI Response**: "Please answer the three questions in aidlc-docs/inception/requirements/duc-tuan-requirement-questions.md. Recommended choices are Q1 A, Q2 A, Q3 C. The AI-DLC requirements-analysis rule explicitly requires stopping until answers are received. Raw inputs are excluded from Git; no publication has occurred."
+**Context**: INCEPTION - Requirements Analysis, Step 6 mandatory answer gate.
+
+---
+
+## Duc Tuan Portfolio - Requirements Answers and Continuation
+
+**Timestamp**: 2026-10-26T15:55:00Z
+**User Input**: "approve and continue"
+**AI Response**: "Read the user-edited questionnaire: Q1 A, Q2 B, Q3 C. Validated the answers and their consistency with replacement scope and mandatory privacy requirements. Corrected an initial commentary assumption about enabling security; the actual recorded opt-out governs. Security Baseline and PBT remain disabled and their rules are skipped. Generated requirements DT-01 through DT-11 and a review question; updated state and plan checkboxes. No application code, certificate extraction/publication, commit, push, or deployment performed."
+**Context**: INCEPTION - Requirements Analysis answers accepted; generated requirements await their separate approval gate.
+
+---
+
+## Duc Tuan Portfolio - Requirements Completion and Review Prompt
+
+**Timestamp**: 2026-10-26T15:55:00Z
+**User Input**: "N/A"
+**AI Response**:
+
+# 🔍 Requirements Analysis Complete
+
+The requirements cover Duc Tuan’s analytics portfolio, three project case studies, education, experience, and individually reviewed course certificates. Raw documents and private credentials stay out of GitHub and the build. Both optional extensions are disabled, as recorded in your answers.
+
+> **📋 REVIEW REQUIRED:**
+> Please examine the [requirements](inception/requirements/duc-tuan-requirements.md).
+>
+> **🚀 WHAT'S NEXT?**
+>
+> 🔧 **Request Changes** — ask for modifications to the requirements.
+>
+> ✅ **Approve & Continue** — approve requirements and proceed to **User Stories planning**.
+
+The repository’s AI-DLC requirements-analysis rule requires explicit review of the generated requirements before the next stage. The approval question is recorded in duc-tuan-requirements-review-questions.md.
+
+**Context**: INCEPTION - Requirements Analysis Step 9; explicit requirements review required before User Stories planning.
+
+---
+
+## Duc Tuan Portfolio - Requirements Approval and Story Planning
+
+**Timestamp**: 2026-10-26T16:04:56Z
+**User Input**: "approve and continue"
+**AI Response**: "Recorded explicit requirements approval. Loaded user-stories rules and current state. Assessed user-story value and prepared a concise journey-based plan for two archetypes, seven planned stories with an explicit split rule, requirement mappings, and observable acceptance criteria. Created assessment and story plan; updated the approved requirements, review answer, discovery checklist, state, and active documentation index. Security Baseline and PBT are disabled and skipped; mandatory privacy requirements remain enforced. Application code unchanged."
+**Context**: INCEPTION - User Stories Part 1 complete; awaiting explicit plan approval.
+
+---
+
+## Duc Tuan Portfolio - Story Plan Approval Prompt
+
+**Timestamp**: 2026-10-26T16:04:56Z
+**User Input**: "N/A"
+**AI Response**: "Requirements approval recorded. The journey-based story plan is ready at aidlc-docs/inception/plans/duc-tuan-story-generation-plan.md. Choose Approve and Continue or Request Changes using its approval question. The AI-DLC user-stories rule requires explicit plan approval before generating stories and personas."
+**Context**: INCEPTION - User Stories Part 1 Steps 12-13 mandatory plan review gate.
+
+---
+
+## Duc Tuan Portfolio - Story Plan Approval
+
+**Timestamp**: 2026-10-26T17:19:26Z
+**User Input**: "approve and continue"
+**AI Response**: "Recorded explicit approval of the story generation plan as option A. Reloaded plan, requirements, current state, and user-stories rules. Confirmed no ambiguity; proceeding through the approved generation checklist. Security Baseline and PBT remain disabled and skipped; the original privacy requirement remains mandatory."
+**Context**: INCEPTION - User Stories Part 1 approval; Part 2 generation authorized.
+
+---
+
+## Duc Tuan Portfolio - Story Generation Complete
+
+**Timestamp**: 2026-10-26T17:19:26Z
+**User Input**: "N/A"
+**AI Response**: "Generated the reader and maintainer personas and eight requirement-linked stories with three to five Given/When/Then acceptance criteria each. Applied the approved INVEST split of navigation and maintenance. Verified all eleven requirements are covered, confirmed evidence review remains a future implementation task, validated Markdown, and updated plan checkboxes, state, and index. No private source excerpts, application implementation, commit, push, or deployment."
+**Context**: INCEPTION - User Stories Part 2 completed; generated-artifact approval pending.
+
+---
+
+## Duc Tuan Portfolio - Generated Story Review Prompt
+
+**Timestamp**: 2026-10-26T17:19:26Z
+**User Input**: "N/A"
+**AI Response**: "User Stories Complete. Generated eight stories and two personas, covering all DT-01 through DT-11 requirements. The combined navigation/maintenance story was split as approved. Please review aidlc-docs/inception/user-stories/duc-tuan-stories.md and duc-tuan-personas.md. Request Changes or Approve & Continue to Workflow Planning. The AI-DLC user-stories rule requires explicit generated-story approval before proceeding. Both optional extensions are disabled and skipped; privacy remains mandatory. Application implementation has not started."
+**Context**: INCEPTION - User Stories Steps 19-21 explicit review gate.
+
+---
+
+## Duc Tuan Portfolio - Generated Stories Approval and Workflow Planning
+
+**Timestamp**: 2026-10-26T17:21:50Z
+**User Input**: "approve and continue"
+**AI Response**: "Recorded explicit approval of the generated eight stories and two personas. Loaded workflow planning, content validation, depth guidance, approved content, existing dependency context, and current source boundaries. Prepared a single-unit execution plan with medium risk, four remaining execution stages, four skipped design/decomposition stages, package relationships, safe asset sequence, success criteria, a syntax-checked limited Mermaid flowchart, and text alternative. Updated story approval, state, and documentation index. Security Baseline and PBT remain disabled and skipped. No application implementation, commit, push, or deployment."
+**Context**: INCEPTION - Workflow Planning complete; explicit plan approval pending.
+
+---
+
+## Duc Tuan Portfolio - Execution Plan Review Prompt
+
+**Timestamp**: 2026-10-26T17:21:50Z
+**User Input**: "N/A"
+**AI Response**: "Workflow Planning Complete. The execution plan is ready at aidlc-docs/inception/plans/duc-tuan-execution-plan.md. Medium risk: content, presentation, and privacy review across shared data, existing templates, and public assets. Execute concise NFR Requirements and NFR Design, then Code Generation and Build and Test. Skip separate Application Design, Units Generation, Functional Design, and Infrastructure Design because existing component boundaries and static delivery are sufficient. You may Request Changes, Add Skipped Stages, or Approve & Continue to NFR Requirements. The AI-DLC workflow-planning rule requires explicit execution-plan approval before proceeding. Both optional extensions are disabled and skipped; the original privacy requirement remains mandatory. Website implementation has not started; nothing has been published."
+**Context**: INCEPTION - Workflow Planning Step 9 approval gate.
+
+---
+
+## Duc Tuan Portfolio - Execution Plan Approval and NFR Requirements
+
+**Timestamp**: 2026-10-26T17:23:58Z
+**User Input**: "approve and continue"
+**AI Response**: "Recorded explicit execution-plan approval, including skipped design/decomposition stages. Loaded NFR Requirements rules, current state, deployment workflow, and certificate rendering boundaries. Generated six non-functional requirement groups and technology decisions; PNG certificates require image-capable rendering because the current Business view assumes PDF. Recorded privacy, content accuracy, contrast/viewport/keyboard checks, static-delivery boundaries, and meaningful verification. No unresolved ambiguity required a new discovery questionnaire. Updated checkboxes, state, and index. Optional Security Baseline and PBT rules remain disabled and skipped. No application implementation, certificate publication, commit, push, or deployment."
+**Context**: CONSTRUCTION - NFR Requirements artifacts complete; stage approval pending.
+
+---
+
+## Duc Tuan Portfolio - NFR Requirements Review Prompt
+
+**Timestamp**: 2026-10-26T17:23:58Z
+**User Input**: "N/A"
+**AI Response**: "NFR Requirements Complete - duc-tuan-portfolio. The assessment defines public-source/output privacy checks, individual certificate review, accurate content, PNG/PDF rendering, keyboard/mobile/contrast checks, static-navigation reliability, and standard test/build verification. Retain the existing stack. Both optional extensions are disabled and skipped; original privacy constraints remain mandatory. Please examine aidlc-docs/construction/duc-tuan-portfolio/nfr-requirements/. Request Changes or Continue to Next Stage to approve and proceed to NFR Design. The AI-DLC nfr-requirements rule requires explicit approval before proceeding. No implementation or publication has occurred."
+**Context**: CONSTRUCTION - NFR Requirements Steps 7-8 standardized review gate.
+
+---
+
+## Duc Tuan Portfolio - NFR Requirements Approval and NFR Design
+
+**Timestamp**: 2026-10-26T17:28:57Z
+**User Input**: "approve and continue"
+**AI Response**: "Recorded explicit NFR Requirements approval. Loaded NFR Design rules, approved NFR requirements/technology decisions, state, public types, both certificate rendering boundaries, project sections, and safe storage selection. Generated design patterns and logical components within existing application boundaries. Evaluated all required design categories with explicit applicability rationale; no unresolved design choice required discovery questions. Updated approval answer, checkboxes, execution progress, state, and index. Security Baseline and PBT remain disabled and skipped. No application implementation, certificate extraction/publication, commit, push, or deployment."
+**Context**: CONSTRUCTION - NFR Design artifacts complete; explicit review pending.
+
+---
+
+## Duc Tuan Portfolio - NFR Design Review Prompt
+
+**Timestamp**: 2026-10-26T17:28:57Z
+**User Input**: "N/A"
+**AI Response**: "NFR Design Complete - duc-tuan-portfolio. Review the design patterns and logical components under aidlc-docs/construction/duc-tuan-portfolio/nfr-design/. The design specifies selective reviewed assets, image/PDF-aware lightweight certificates, optional contact/portrait/download fields, accessible case studies, and source/output/history checks. Request Changes or Continue to Next Stage to approve and proceed to Code Generation Part 1 planning. The NFR Design rule requires explicit approval before the next stage. Security Baseline and PBT are disabled and skipped; privacy remains mandatory. Website implementation has not started and nothing has been published."
+**Context**: CONSTRUCTION - NFR Design Steps 7-8 standardized review gate.
+
+---
+
+## Duc Tuan Portfolio - NFR Design Approval and Code Generation Planning
+
+**Timestamp**: 2026-10-26T17:32:35Z
+**User Input**: "approve and continue"
+**AI Response**: "Recorded explicit NFR Design approval. Loaded Code Generation rules, state, approved design/context, existing source and optional-field consumers, test boundaries, and metadata. Applied Sites presentation-led design guidance to the existing local GitHub Pages project; no separate Sites hosting is planned. Created a nine-step executable plan with exact file boundaries, all eight story mappings, local certificate inspection and public allowlist, native analytics artwork, existing template customization, meaningful tests/build, available browser checks, privacy review, and documentation/tracking. Updated approvals, state, execution progress, and index. Security Baseline and PBT remain disabled and skipped. No application implementation, commit, push, or deployment."
+**Context**: CONSTRUCTION - Code Generation Part 1 plan complete; explicit full-plan approval pending.
+
+---
+
+## Duc Tuan Portfolio - Implementation Plan Approval Prompt
+
+**Timestamp**: 2026-10-26T17:32:35Z
+**User Input**: "N/A"
+**AI Response**: "Code Generation Plan Complete - duc-tuan-portfolio. Review aidlc-docs/construction/plans/duc-tuan-portfolio-code-generation-plan.md. Nine steps cover local evidence/certificate review, public data and contracts, analytics visual identity, three case studies, accessible certificate access, metadata and asset cleanup, meaningful tests/build, privacy and available browser checks, and implementation handoff. All eight stories are mapped. Request Changes or Continue to Next Stage to approve the entire plan and begin implementation. The AI-DLC code-generation rule requires explicit plan approval before editing application code. Optional Security Baseline and PBT are disabled and skipped; privacy remains mandatory. No implementation or publication has occurred."
+**Context**: CONSTRUCTION - Code Generation Part 1 Steps 6-7 approval gate.
+
+---
+
+## Duc Tuan Portfolio - Implementation Plan Approval
+
+**Timestamp**: 2026-10-26T17:38:31Z
+**User Input**: "approve"
+**AI Response**: "Recorded explicit approval of all nine implementation steps and their sequence. Beginning Code Generation Part 2 with local evidence and certificate review. Both optional extensions remain disabled; original confidentiality and approved NFR checks apply. No push or deployment is authorized by this implementation plan."
+**Context**: CONSTRUCTION - Code Generation Part 2, Step 1.
+
+---
+
+## Duc Tuan Portfolio - Implementation Progress Update 1
+
+**Timestamp**: 2026-10-26T17:53:04Z
+**User Input**: "N/A"
+**AI Response**: "I’ll record your approval and begin implementation. I’ll review the certificates locally, build the analytics portfolio, then run the tests, production build, and privacy checks before presenting the result."
+**Context**: CONSTRUCTION - Code Generation Part 2; commentary recorded during implementation handoff.
+
+---
+
+## Duc Tuan Portfolio - Implementation Progress Update 2
+
+**Timestamp**: 2026-10-26T17:53:04Z
+**User Input**: "N/A"
+**AI Response**: "The six Kaggle images are ordinary course certificates bearing Duc Tuan’s name; their PNG files contain no metadata chunks beyond image data. They’re suitable for the public gallery. I’m checking the Coursera PDFs next, then I’ll replace the shared content so both portfolio styles use Duc Tuan’s identity."
+**Context**: CONSTRUCTION - Code Generation Part 2; commentary recorded during implementation handoff.
+
+---
+
+## Duc Tuan Portfolio - Implementation Progress Update 3
+
+**Timestamp**: 2026-10-26T17:53:04Z
+**User Input**: "N/A"
+**AI Response**: "The analytics visual system and Duc Tuan’s shared content are in place. The Coursera PDF explicitly confirms the full nine-course Google Data Analytics Professional Certificate, so I can label it accordingly; the job-search certificate will remain a separate course entry.
+
+Next I’m adding expandable case studies and certificate access that handles images and PDFs without loading every PDF on the page."
+**Context**: CONSTRUCTION - Code Generation Part 2; commentary recorded during implementation handoff.
+
+---
+
+## Duc Tuan Portfolio - Implementation Progress Update 4
+
+**Timestamp**: 2026-10-26T17:53:04Z
+**User Input**: "N/A"
+**AI Response**: "The case studies and certificate gallery are implemented, and the previous owner’s assets have been removed from the current source tree. I also found that the repository’s existing history contains the previous owner’s résumé and university document. I’ll report that separately; this change won’t rewrite history.
+
+Next I’ll update the tests for Duc Tuan’s content and run the production build and browser checks."
+**Context**: CONSTRUCTION - Code Generation Part 2; commentary recorded during implementation handoff.
+
+---
+
+## Duc Tuan Portfolio - Implementation Progress Update 5
+
+**Timestamp**: 2026-10-26T17:53:04Z
+**User Input**: "N/A"
+**AI Response**: "All 55 tests pass, and the production build succeeds. The build contains the eight reviewed certificates and no raw résumé, ZIP, or previous-owner documents.
+
+The bundle is large—about 287 KB gzipped for JavaScript—so I’ll record that limitation. I’m checking the layout, keyboard controls, and certificate access in the local browser next."
+**Context**: CONSTRUCTION - Code Generation Part 2; commentary recorded during implementation handoff.
+
+---
+
+## Duc Tuan Portfolio - Implementation Progress Update 6
+
+**Timestamp**: 2026-10-26T17:53:04Z
+**User Input**: "N/A"
+**AI Response**: "The default analytics layout has no page overflow at 320, 768, or 1440 pixels, and the screenshots show readable desktop and mobile layouts. Keyboard checks confirm that case studies expand and the mobile menu closes with Escape and returns focus to its trigger.
+
+I’m finishing the alternate-style and certificate-link checks, then documenting the result and the separate history finding."
+**Context**: CONSTRUCTION - Code Generation Part 2; commentary recorded during implementation handoff.
+
+---
+
+## Duc Tuan Portfolio - Implementation and Verification Complete
+
+**Timestamp**: 2026-10-26T17:53:04Z
+**User Input**: "N/A"
+**AI Response**: "Completed all nine approved implementation steps and all eight story outcomes. Added public source-grounded data, custom analytics styling/native SVGs, optional profile handling, three native expandable case studies, lightweight PNG/PDF certificates, safe legacy content behavior, metadata and documentation. Locally reviewed eight certificates with matching hashes; removed 29 old-owner/starter assets from current source after local backup. Standard suite passed 55 tests across 9 files; TypeScript/Vite and temporary project-subpath builds passed; Chrome desktop/mobile, image, certificate HTTP 200, native keyboard, menu focus-return, contrast, and reflow checks completed with no observed exceptions or overflow. Initial synthetic key-down-only checks did not trigger native controls; full character/key events verified the intended behavior. Recorded performance and browser verification limits. Existing history contains previous-owner résumé/university records; no history rewrite was performed. High-confidence key patterns and old-owner identity were absent from scanned runtime source/output. No staging, commit, push, or deployment. Stopped task-owned Vite/Chrome processes. Security Baseline and PBT remain disabled and skipped; confidentiality remains mandatory."
+**Context**: CONSTRUCTION - Code Generation Part 2 complete; generated-code approval pending before Build and Test.
+
+---
+
+## Duc Tuan Portfolio - Generated Code Review Prompt
+
+**Timestamp**: 2026-10-26T17:53:04Z
+**User Input**: "N/A"
+**AI Response**: "Code Generation Complete — duc-tuan-portfolio. Built Duc Tuan’s custom analytics portfolio with three case studies and eight reviewed certificates. Verification: 55 tests passed; production and project-subpath builds passed; desktop/mobile and keyboard checks passed within documented limits. Review the implementation summary and public asset/history findings. Current source/output excludes raw private inputs. Existing Git history still contains the previous owner’s résumé and university document; no history rewrite or publication occurred. Request Changes or Continue to Next Stage to approve the generated code and proceed to Build and Test. The AI-DLC code-generation rule requires generated-code approval before that stage."
+**Context**: CONSTRUCTION - Code Generation Step 14-15 standardized generated-code review gate.
+
+---
+
+## Duc Tuan Portfolio - Interrupted Build and Test Continuation
+
+**Timestamp**: 2026-10-27T14:08:37Z
+**User Input**: "approve"
+**AI Response**: "User authorized continuing to Build and Test. Stage rules and current artifacts were read, but no build/test stage artifacts or new executions completed before interruption."
+**Context**: CONSTRUCTION - Code Generation quality revision.
+
+---
+
+## Duc Tuan Portfolio - Design Quality Rejection
+
+**Timestamp**: 2026-10-27T14:08:37Z
+**User Input**: "no it's not done, please reference this project in terms of website structure, responsiveness and information organisation. I'm not happy with the current quality"
+**AI Response**: "Recorded the current prototype as unaccepted and superseded the completion review. Inspected current navigation, shell, hero, and state. A reference location is not identified in the visible messages. No neighboring project was selected by guesswork."
+**Context**: CONSTRUCTION - Code Generation quality revision.
+
+---
+
+## Duc Tuan Portfolio - Resume Quality Revision
+
+**Timestamp**: 2026-10-27T14:08:37Z
+**User Input**: "resume and continue"
+**AI Response**: "Continued the same quality revision. Created a concise current-source assessment and one reference-location question. Kept approved Duc Tuan content and privacy scope; deferred completion review pending the reference-informed redesign. No application change, publication, or history rewrite occurred during this clarification."
+**Context**: CONSTRUCTION - Code Generation quality revision.
+
+---
+
+## Duc Tuan Portfolio - Reference Location Request
+
+**Timestamp**: 2026-10-27T14:08:37Z
+**User Input**: "N/A"
+**AI Response**: "The reference project is not attached or linked in the current conversation. Please provide its website/repository URL or local folder path through aidlc-docs/construction/plans/duc-tuan-reference-questions.md. This input is required to follow the requested reference rather than invent a substitute."
+**Context**: Required reference identification; all prior content/privacy constraints retained.
+
+---
+
+## Duc Tuan Portfolio - Reference Supplied and Revision Direction
+
+**Timestamp**: 2026-10-27T14:17:20Z
+**User Input**: "[https://bao252512.github.io/](https://bao252512.github.io/) please reference this one"
+**AI Response**: "Resolved the reference. Web access tool could not open it, so inspected the public site in isolated Chrome at 1440/768/390 pixels and read only its corresponding local public application source. Identified full-width single-page flow, four semantic navigation links, larger typography, alternating interactive project narratives, process explorer, combined journey/education, personal/evidence sections, and mobile stacking. Amended the existing implementation plan and began the explicitly requested quality revision; no new discovery/approval loop. Duc Tuan privacy and ordinary-certificate boundaries remain mandatory. No reference personal records/claims are reused."
+**Context**: CONSTRUCTION - authorized quality revision.
+
+---
+
+## Duc Tuan Portfolio - Resume Reference-informed Revision
+
+**Timestamp**: 2026-10-27T14:43:46Z
+**User Input**: "please resume and continue"
+**AI Response**: "Resumed the same authorized reference-informed quality revision. The interrupted browser had lost its local preview, so restarted the task-owned preview and navigated explicitly to the actual portfolio before final measurement. The real root CSS zoom 2 check exposed a compressed hero illustration and 22px page overflow. Added container-width queries to make enlarged/embedded layouts stack correctly and retained normal viewport breakpoints. Repeated checks showed no page overflow at 200% root CSS zoom or effective half-width/high-DPI reflow. Refined public provenance wording and test environment setup, updated README/architecture documentation, and completed the revision checklist."
+**Context**: CONSTRUCTION - Code Generation quality amendment resumed and completed.
+
+---
+
+## Duc Tuan Portfolio - Reference Revision Verification
+
+**Timestamp**: 2026-10-27T14:43:46Z
+**User Input**: "N/A"
+**AI Response**: "Final complete suite passed 56 tests across 9 files without the earlier jsdom scrollTo warning. TypeScript/Vite build passed: JavaScript 234.09 kB / 73.88 kB gzip; CSS 29.92 kB / 6.50 kB gzip. Compared the public reference at 1440/768/390 and verified the revision at 1440/1024/768/390/320; inspected hero and lower project/process/evidence/journey/personal sections. Native keyboard process arrows/Home/End, menu Escape/focus return, case details, named certificate dialog, image loading, dialog Escape/focus return, on-demand PDF/original links, motion control, and old section URL normalization passed. No runtime exceptions were observed. Repeated certificate hashes and runtime/output scans passed within documented scope. Actual browser UI zoom, other browsers, and screen readers were not fully tested. Privacy and accuracy constraints remain enforced; disabled Security Baseline and PBT extensions remain skipped. No staging, commit, push, deployment, or history rewrite occurred. Existing previous-owner historical document exposure remains documented."
+**Context**: CONSTRUCTION - completed reference-informed implementation; visual/code review pending.
+
+---
+
+## Duc Tuan Portfolio - Revised Result Review
+
+**Timestamp**: 2026-10-27T14:43:46Z
+**User Input**: "N/A"
+**AI Response**: "Reworked the portfolio around Bao’s structure: full-width flow, four navigation links, larger typography, alternating project stories, a process explorer, combined education/experience, and a music/community ending. Desktop and mobile previews are in /tmp/duc-tuan-review/duc-tuan-desktop.png and duc-tuan-mobile.png. All 56 tests and the production build pass; responsive, keyboard/dialog, and enlarged-layout checks passed within documented limits. Private inputs remain excluded; nothing was pushed or deployed. Request Changes or Continue to Next Stage for Build and Test. The code-generation workflow requires visual/code acceptance before the next stage. Existing historical-source finding remains documented and is not erased."
+**Context**: CONSTRUCTION - Code Generation review; Request Changes or Continue to Next Stage.
+
+---
+
+## Duc Tuan Portfolio - Coursera Preview Fix
+
+**Timestamp**: 2026-10-27T15:19:19Z
+**User Input**: "The 2 coursera certificates are not displayed properly"
+**AI Response**: "User requested correction of both Coursera previews, specifically their displayed previews. Identified synthetic gallery text covers and browser-dependent PDF object rendering. Proceeding with actual locally rendered page images from the already reviewed public-safe certificates, preserving original PDFs and privacy boundaries."
+**Context**: CONSTRUCTION - focused corrective implementation within the active portfolio revision.
+
+---
+
+## Duc Tuan Portfolio - Coursera Preview Fix
+
+**Timestamp**: 2026-10-27T15:19:19Z
+**User Input**: "for preview"
+**AI Response**: "User requested correction of both Coursera previews, specifically their displayed previews. Identified synthetic gallery text covers and browser-dependent PDF object rendering. Proceeding with actual locally rendered page images from the already reviewed public-safe certificates, preserving original PDFs and privacy boundaries."
+**Context**: CONSTRUCTION - focused corrective implementation within the active portfolio revision.
+
+---
+
+## Duc Tuan Portfolio - Coursera Preview Correction Complete
+
+**Timestamp**: 2026-10-27T15:22:09Z
+**User Input**: "N/A"
+**AI Response**: "Rendered and visually inspected actual page-one PNG previews from the two already reviewed Coursera PDFs using local PDFKit at 2400 × 1854. Added optional preview references to the certificate contract/data and used them for gallery thumbnails and expanded dialogs, preserving original PDF links. Added derivative hashes to the public asset allowlist and adjusted evidence/asset tests. All 57 tests across 9 files and the TypeScript/Vite production build passed. Chrome verification at 1440px and 390px confirmed both thumbnails/dialogs decoded the full images with contain fitting, no PDF embed was mounted, original PDFs returned HTTP 200, and no runtime exception/page overflow was observed. No credentials changed, no private inputs published, no commit/push/deployment/history rewrite. Fixed both Coursera previews; actual certificate images now appear in the gallery and expanded reader, while the original PDFs remain available."
+**Context**: CONSTRUCTION - requested focused preview fix complete; existing visual/code review remains pending.
+
+---

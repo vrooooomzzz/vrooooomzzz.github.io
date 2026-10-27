@@ -21,7 +21,9 @@ function BusinessEducation() {
             key={`${entry.institution}-${entry.period}`}
             className="business-ledger-row"
           >
-            <Image className="business-ledger-logo" src={entry.logo} alt="" />
+            {entry.logo ? (
+              <Image className="business-ledger-logo" src={entry.logo} alt="" />
+            ) : null}
             <Box className="business-ledger-title">
               <Text as="h3">{entry.degree}</Text>
               <Text>{entry.institution}</Text>

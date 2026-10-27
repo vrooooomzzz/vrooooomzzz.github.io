@@ -276,15 +276,7 @@ function Journal() {
             ))}
           </SimpleGrid>
 
-          <HStack justify="center" className="reveal-up delay-3">
-            <ExternalAction
-              href="https://nhamhung.wordpress.com/"
-              label="VISIT_BLOG"
-              ariaLabel="Visit Learn IT together blog"
-              tone="primary"
-              testId="journal-visit-blog"
-            />
-          </HStack>
+          <HStack justify="center" className="reveal-up delay-3"></HStack>
         </VStack>
       </VStack>
     </SectionShell>

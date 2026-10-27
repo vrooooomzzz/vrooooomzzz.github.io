@@ -19,7 +19,7 @@
 
 ## Good Patterns
 
-- Shared typed data supports all three templates without content duplication.
+- Shared typed data supports all two templates without content duplication.
 - Template completeness is enforced by TypeScript and registry tests.
 - Hash routing avoids GitHub Pages rewrite dependencies.
 - Layout storage failures have safe fallbacks and tests.
@@ -31,7 +31,7 @@
 ## Technical Debt and Risks
 
 - The shared selector reads template metadata from the registry imported by the same shell graph; this render-safe ESM cycle should be revisited if template modules gain side effects.
-- Neutral and Business intentionally reuse several shared sections, so shared-component changes have a three-template regression surface.
+- Neutral and Business intentionally reuse several shared sections, so shared-component changes have a two-template regression surface.
 - `src/hooks/usePortfolioLayout.ts` deliberately gives every template the same single/multi-page and route model; future template-specific routing would require a new contract.
 - `src/App.css` and `src/index.css` contain substantial shared and template-scoped styling that require disciplined selector isolation.
 - No browser-level visual regression or end-to-end suite automatically verifies responsive composition or menu focus behavior.
@@ -39,7 +39,7 @@
 
 ## Runtime-Selector Constraints
 
-- Keep exactly Engineering, Neutral, and Business.
+- Keep exactly Engineering and Business.
 - `src/data/template.ts` remains the first-visit source default.
 - Runtime choice must preserve route, journal, layout, and color-mode state.
 - Every responsive shell header must expose the same accessible choice.
@@ -48,6 +48,6 @@
 ## Recommended Next Improvements
 
 - Extract template display metadata from the registry graph if future module side effects make the current selector import cycle risky.
-- Add Playwright screenshot and keyboard-flow checks for all three responsive headers when browser automation is available.
+- Add Playwright screenshot and keyboard-flow checks for both responsive headers when browser automation is available.
 - Consolidate the duplicate ESLint configuration files.
 - Keep future presentation options within the existing shell/registry contract unless requirements justify a wider routing model.

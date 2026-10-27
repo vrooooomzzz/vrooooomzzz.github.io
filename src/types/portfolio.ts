@@ -42,9 +42,9 @@ export type Profile = {
   slug: string;
   role: string;
   location: string;
-  email: string;
-  profileImage: string;
-  resume: DownloadLink;
+  email?: string;
+  profileImage?: string;
+  resume?: DownloadLink;
   summary: string;
   socialLinks: ExternalLink[];
 };
@@ -81,7 +81,7 @@ export type EducationEntry = {
   institution: string;
   period: string;
   specialization: string;
-  logo: string;
+  logo?: string;
   description: string[];
 };
 
@@ -113,6 +113,7 @@ export type ProjectEntry = {
   logoAccent?: string;
   technologies: string[];
   actions: ExternalLink[];
+  caseStudy?: { label: string; text: string }[];
 };
 
 export type GalleryItem = {
@@ -179,6 +180,8 @@ export type CertificateEntry = {
   kind: string;
   description: string;
   file: string;
+  format?: "image" | "pdf";
+  preview?: string;
   logoKey: string;
   logoLabel: string;
   logoAccent?: string;

@@ -1,108 +1,109 @@
-import aixImpactCertificate from '../assets/certificates/aiximpact-certificate.pdf'
-import aixImpactPresentation from '../assets/certificates/aiximpact-final-presentation.pdf'
-import awsCloudPractitioner from '../assets/certificates/aws-cloud-practitioner.pdf'
-import kubernetesApplicationDeveloper from '../assets/certificates/certified-kubernetes-application-developer.pdf'
-import courseraCertificate from '../assets/certificates/coursera-mmpg2mrcsjrt.pdf'
-import databaseSystemFocusArea from '../assets/certificates/database-system-focus-area.pdf'
-import nusBigDataSystemsAward from '../assets/certificates/nus-top-student-for-big-data-systems.pdf'
-import universityCertificate from '../assets/certificates/university.pdf'
-import type { CertificateEntry } from '../types/portfolio'
+import type { CertificateEntry } from "../types/portfolio";
+import cert0 from "../assets/certificates/duc-tuan/google-data-analytics.pdf";
+import cert1 from "../assets/certificates/duc-tuan/data-visualization.png";
+import cert2 from "../assets/certificates/duc-tuan/feature-engineering.png";
+import cert3 from "../assets/certificates/duc-tuan/python.png";
+import cert4 from "../assets/certificates/duc-tuan/pandas.png";
+import cert5 from "../assets/certificates/duc-tuan/intro-to-machine-learning.png";
+import cert6 from "../assets/certificates/duc-tuan/intro-to-programming.png";
+import cert7 from "../assets/certificates/duc-tuan/google-job-search-ai.pdf";
 
-export const certificates = [
+import analyticsPreview from "../assets/certificates/duc-tuan/google-data-analytics-preview.png";
+import jobSearchPreview from "../assets/certificates/duc-tuan/google-job-search-ai-preview.png";
+
+export const certificates: CertificateEntry[] = [
   {
-    title: 'AIxImpact Competition Certificate',
-    issuer: 'AIxImpact',
-    kind: 'Competition',
+    title: "Google Data Analytics Professional Certificate",
+    issuer: "Google / Coursera",
+    kind: "Professional Certificate",
     description:
-      'Recognition for presenting a feasible and meaningful AI-based solution to the problem of predicting and handling future global pandemics.',
-    file: aixImpactCertificate,
-    logoKey: 'aiximpact',
-    logoLabel: 'AIxImpact competition logo mark',
-    logoAccent: '#0f766e',
-    ariaLabel: 'Open AIxImpact Certificate',
+      "Completed the nine-course program covering preparation, cleaning, analysis, visualization, and communication.",
+    file: cert0,
+    preview: analyticsPreview,
+    format: "pdf",
+    logoKey: "coursera",
+    logoLabel: "Google / Coursera",
+    ariaLabel:
+      "Open Google Data Analytics Professional Certificate certificate",
   },
   {
-    title: 'AIxImpact Final Presentation',
-    issuer: 'AIxImpact',
-    kind: 'Presentation',
+    title: "Data Visualization",
+    issuer: "Kaggle",
+    kind: "Coursework",
     description:
-      'Final project deck showing problem framing, solution design, implementation decisions, and justification of our group\'s proposal for the AIxImpact case competition.',
-    file: aixImpactPresentation,
-    logoKey: 'aiximpact',
-    logoLabel: 'AIxImpact presentation logo mark',
-    logoAccent: '#0f766e',
-    ariaLabel: 'Open AIxImpact Final Presentation',
+      "Communicating patterns through clear and effective visualizations.",
+    file: cert1,
+    format: "image",
+    logoKey: "python",
+    logoLabel: "Kaggle",
+    ariaLabel: "Open Data Visualization certificate",
   },
   {
-    title: 'AWS Certified Cloud Practitioner',
-    issuer: 'Amazon Web Services',
-    kind: 'Certification',
-    description:
-      'Foundational AWS certification covering cloud concepts, core services, security, architecture, pricing, and operational practices.',
-    file: awsCloudPractitioner,
-    logoKey: 'amazonwebservices',
-    logoLabel: 'Amazon Web Services certification logo',
-    logoAccent: '#ff9900',
-    ariaLabel: 'Open AWS Certified Cloud Practitioner certificate',
+    title: "Feature Engineering",
+    issuer: "Kaggle",
+    kind: "Coursework",
+    description: "Building useful representations for machine learning.",
+    file: cert2,
+    format: "image",
+    logoKey: "python",
+    logoLabel: "Kaggle",
+    ariaLabel: "Open Feature Engineering certificate",
   },
   {
-    title: 'Certified Kubernetes Application Developer',
-    issuer: 'The Linux Foundation',
-    kind: 'Certification',
-    description:
-      'Cloud-native credential demonstrating hands-on Kubernetes application design, deployment, configuration, and troubleshooting skills.',
-    file: kubernetesApplicationDeveloper,
-    logoKey: 'kubernetes',
-    logoLabel: 'Kubernetes certification logo',
-    logoAccent: '#326ce5',
-    ariaLabel: 'Open Certified Kubernetes Application Developer certificate',
+    title: "Python",
+    issuer: "Kaggle",
+    kind: "Coursework",
+    description: "Practical Python programming foundations.",
+    file: cert3,
+    format: "image",
+    logoKey: "python",
+    logoLabel: "Kaggle",
+    ariaLabel: "Open Python certificate",
   },
   {
-    title: 'Coursera Machine Learning Certificate',
-    issuer: 'Coursera',
-    kind: 'Coursework',
-    description:
-      'Certified completion of the Machine Learning course on Coursera by Deep Learning AI.',
-    file: courseraCertificate,
-    logoKey: 'coursera',
-    logoLabel: 'Coursera logo',
-    logoAccent: '#0056d2',
-    ariaLabel: 'Open Coursera Certificate',
+    title: "Pandas",
+    issuer: "Kaggle",
+    kind: "Coursework",
+    description: "Working with tabular data in Python.",
+    file: cert4,
+    format: "image",
+    logoKey: "python",
+    logoLabel: "Kaggle",
+    ariaLabel: "Open Pandas certificate",
   },
   {
-    title: 'Database System Focus Area',
-    issuer: 'National University of Singapore',
-    kind: 'Coursework',
-    description:
-      'Certified completion of the Database Specialisation track from the NUS Computer Science degree.',
-    file: databaseSystemFocusArea,
-    logoKey: 'nus',
-    logoLabel: 'Database coursework logo mark',
-    logoAccent: '#ef7c00',
-    ariaLabel: 'Open Database System Focus Area certificate',
+    title: "Intro to Machine Learning",
+    issuer: "Kaggle",
+    kind: "Coursework",
+    description: "Model building, validation, and predictive foundations.",
+    file: cert5,
+    format: "image",
+    logoKey: "python",
+    logoLabel: "Kaggle",
+    ariaLabel: "Open Intro to Machine Learning certificate",
   },
   {
-    title: 'NUS Top Student for Big Data Systems',
-    issuer: 'National University of Singapore',
-    kind: 'Award',
-    description:
-      'Academic award recognizing top performance in big data systems, a specialisation module on distributed big data processing.',
-    file: nusBigDataSystemsAward,
-    logoKey: 'nus',
-    logoLabel: 'National University of Singapore award logo mark',
-    logoAccent: '#ef7c00',
-    ariaLabel: 'Open NUS Top Student for Big Data Systems award',
+    title: "Intro to Programming",
+    issuer: "Kaggle",
+    kind: "Coursework",
+    description: "Foundations of computational problem solving.",
+    file: cert6,
+    format: "image",
+    logoKey: "python",
+    logoLabel: "Kaggle",
+    ariaLabel: "Open Intro to Programming certificate",
   },
   {
-    title: 'University Academic Certificate',
-    issuer: 'Academic',
-    kind: 'National University of Singapore',
+    title: "Accelerate Your Job Search with AI",
+    issuer: "Google / Coursera",
+    kind: "Coursework",
     description:
-      'Official degree scroll for my 4-year undergraduate study in Singapore.',
-    file: universityCertificate,
-    logoKey: 'nus',
-    logoLabel: 'University certificate logo mark',
-    logoAccent: '#ef7c00',
-    ariaLabel: 'Open University certificate',
+      "An individual course on applying AI to the job-search process.",
+    file: cert7,
+    preview: jobSearchPreview,
+    format: "pdf",
+    logoKey: "coursera",
+    logoLabel: "Google / Coursera",
+    ariaLabel: "Open Accelerate Your Job Search with AI certificate",
   },
-] satisfies CertificateEntry[]
+];

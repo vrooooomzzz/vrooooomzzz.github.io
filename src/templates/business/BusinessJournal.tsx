@@ -129,12 +129,6 @@ function BusinessJournal() {
           </Box>
         ))}
       </Box>
-      <ExternalAction
-        href="https://nhamhung.wordpress.com/"
-        label="Visit blog"
-        ariaLabel="Visit Learn IT together blog"
-        testId="journal-visit-blog"
-      />
     </Box>
   );
 }

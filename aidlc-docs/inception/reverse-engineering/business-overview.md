@@ -8,7 +8,7 @@ flowchart TD
     Visitor["Recruiter, Mentor, Peer, or Collaborator"]
     Portfolio["Student Portfolio Website"]
     Content["Typed Portfolio Data and Journal Content"]
-    Templates["Engineering, Neutral, and Business Templates"]
+    Templates["Engineering and Business Templates"]
     External["GitHub, LinkedIn, WordPress, YouTube, and Email"]
     Pages["GitHub Pages"]
 
@@ -23,16 +23,16 @@ flowchart TD
 
 ### Text Alternative
 
-Students maintain shared typed content, choose the initial presentation, and publish the static site to GitHub Pages. Visitors can choose and persist their preferred Engineering, Neutral, or Business presentation, open local journal posts, inspect portfolio evidence, and follow external links.
+Students maintain shared typed content, choose the initial presentation, and publish the static site to GitHub Pages. Visitors can choose and persist their preferred Engineering or Business presentation, open local journal posts, inspect portfolio evidence, and follow external links.
 
 ## Business Description
 
-- **Business Description**: The application is a reusable student portfolio that separates personal content from presentation. The same profile, education, experience, projects, media, writing, skills, and contact data can be rendered through Engineering, Neutral, or Business.
+- **Business Description**: The application is a reusable student portfolio that separates personal content from presentation. The same profile, education, experience, projects, media, writing, skills, and contact data can be rendered through Engineering or Business.
 - **Primary Template Goal**: Give students with different disciplines a credible starting point they can customize without duplicating content or needing a backend.
 - **Business Transactions**:
   - A student edits typed files in `src/data/`, Markdown journal content, and local media assets.
   - A student chooses the first-visit presentation in `src/data/template.ts`.
-  - A visitor switches among Engineering, Neutral, and Business from any responsive header and the browser remembers the choice.
+  - A visitor switches among Engineering and Business from any responsive header and the browser remembers the choice.
   - A visitor browses all enabled sections in single-page mode or one section at a time in multi-page mode.
   - A visitor navigates through desktop or mobile controls and can switch color and layout modes.
   - A visitor opens an in-site journal post through a GitHub Pages-safe hash route.
@@ -61,7 +61,7 @@ Students maintain shared typed content, choose the initial presentation, and pub
 
 ### Template Registry
 - **Purpose**: Let one portfolio dataset support multiple student-facing outlooks.
-- **Responsibilities**: Register exactly three templates, resolve active IDs with an Engineering fallback, and guarantee a shell and component for every section.
+- **Responsibilities**: Register exactly two templates, resolve active IDs with an Engineering fallback, and guarantee a shell and component for every section.
 
 ### Content and Writing Data
 - **Purpose**: Keep student-editable information separate from JSX presentation.

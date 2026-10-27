@@ -17,7 +17,7 @@ export const portfolioTemplateOptions = {
     id: "business",
     label: "Business",
     description:
-      "An editorial casebook for experience, evidence, and selected work.",
+      "A personal analytics portfolio connecting questions, methods, and human context.",
   },
 } satisfies Record<PortfolioTemplateId, PortfolioTemplateOption>;
 

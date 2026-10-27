@@ -24,7 +24,14 @@ export const getEnabledSectionIds = (
 export const scrollToSection = (sectionId: SectionId): void => {
   const section = document.getElementById(sectionId);
 
-  section?.scrollIntoView({ behavior: "smooth" });
+  if (section) {
+    const reduced = window.matchMedia?.(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+    section.scrollIntoView({ behavior: reduced ? "auto" : "smooth" });
+  } else {
+    window.location.hash = `#/${sectionId}`;
+  }
 };
 
 export const useActiveSection = (

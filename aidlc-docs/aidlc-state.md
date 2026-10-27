@@ -2,21 +2,55 @@
 
 ## Active Workflow
 
-- **Project**: Brownfield React/Vite static portfolio
-- **Workspace**: `/Users/nhamhhung/nhamhung.github.io`
-- **Change**: Business Color and Two-Theme Refresh
+- **Project**: Duc Tuan Data Analytics Portfolio - brownfield React/Vite static portfolio
+- **Workspace**: `/Users/nhamhhung/vrooooomzzz.github.io`
+- **Change**: Customize the existing portfolio using the Duc Tuan résumé and newly added ZIP, replacement scope confirmed
 - **Current phase**: CONSTRUCTION
-- **Current stage**: Code Generation Part 2 - eighteen-step review gate
-- **Workflow status**: Active
-- **Active requirement questions**: `aidlc-docs/inception/requirements/business-youthful-color-refresh-requirement-questions.md`
-- **Active requirements**: `aidlc-docs/inception/requirements/business-youthful-color-refresh-requirements.md`
-- **Active execution plan**: `aidlc-docs/inception/plans/business-youthful-color-refresh-execution-plan.md`
-- **Active code-generation plan**: `aidlc-docs/construction/plans/business-youthful-color-refresh-code-generation-plan.md`
-- **Active approval question**: `aidlc-docs/construction/plans/business-youthful-color-refresh-step-18-approval-questions.md`
-- **Active code-generation summary**: `aidlc-docs/construction/business-youthful-color-refresh/code/code-generation-summary.md`
-- **Next action**: Await explicit Code Generation review before the final Build and Test rerun
+- **Current stage**: Code Generation Part 2 - both Coursera previews corrected and verified; awaiting visual review
+- **Workflow status**: Active; revised implementation ready for visual review
+- **Active requirement questions**: `aidlc-docs/inception/requirements/duc-tuan-requirement-questions.md`
+- **Active requirements**: `aidlc-docs/inception/requirements/duc-tuan-requirements.md`
+- **Active approval question**: `aidlc-docs/construction/plans/duc-tuan-portfolio-code-review-questions.md`
+- **Resolved reference question**: `aidlc-docs/construction/plans/duc-tuan-reference-questions.md`
+- **Active revision plan**: `aidlc-docs/construction/plans/duc-tuan-quality-revision-plan.md`
+- **Active code-generation summary**: `aidlc-docs/construction/duc-tuan-portfolio/code/code-generation-summary.md`
+- **Active execution plan**: `aidlc-docs/inception/plans/duc-tuan-execution-plan.md`
+- **Active stories**: `aidlc-docs/inception/user-stories/duc-tuan-stories.md`
+- **Active personas**: `aidlc-docs/inception/user-stories/duc-tuan-personas.md`
+- **Active discovery plan**: `aidlc-docs/inception/plans/duc-tuan-workspace-detection.md`
+- **Next action**: Review the revised desktop/mobile result, then continue to the required Build and Test documentation stage if accepted
+- **Prior workflow**: Business Color and Two-Theme Refresh completed its eighteen code-generation steps and remains at its historical review gate. Prior scope and progress below are retained as history, not approval for the new change.
 
-## Current Scope
+## Duc Tuan Stage Progress
+
+- [x] Workspace Detection - existing portfolio and both local source inputs inspected
+- [x] Reverse Engineering Context - existing artifacts reused with current-source checks
+- [x] Requirements Answers - A / B / C validated after user continuation
+- [x] Requirements Document - generated and validated
+- [x] Requirements Approval - explicitly approved by user continuation
+- [x] User Stories Part 1 - assessment and story plan prepared
+- [x] User Stories Plan Approval - explicitly approved by user continuation
+- [x] User Stories Part 2 - eight stories and two personas generated and validated
+- [x] User Stories Review Approval - explicit user continuation
+- [x] Workflow Planning - execution plan generated and validated
+- [x] Workflow Planning Approval - explicit user continuation
+- [x] Application Design - SKIP approved; existing component boundaries
+- [x] Units Generation - SKIP approved; single portfolio unit
+- [x] Functional Design - SKIP approved; no complex business logic
+- [x] NFR Requirements Artifacts - generated and validated
+- [x] NFR Requirements Approval - explicit user continuation
+- [x] NFR Design Artifacts - generated and validated
+- [x] NFR Design Approval - explicit user continuation
+- [x] Infrastructure Design - SKIP approved; existing GitHub Pages
+- [x] Code Generation Part 1 - nine-step implementation plan generated and validated
+- [x] Code Generation Plan Approval - user response "approve"
+- [x] Code Generation Part 2 - all nine steps complete; initial verification recorded; superseded by the reference-informed revision and 56-test verification
+- [ ] Generated Code Acceptance - quality rejection supersedes prior completion review
+- [x] Reference-informed Quality Revision - full-width narrative, process/evidence, combined journey, 56 tests, production build, and browser/reflow checks
+- [ ] Build and Test
+- [ ] Operations - placeholder
+
+## Prior Workflow Scope
 
 - Apply the approved blue/mint/cream background palette and taupe/cream/orange text palette to Business.
 - Preserve Business layout, typography, content, routes, interactions, responsive behavior, and certificate previews.
@@ -45,8 +79,8 @@
 
 | Extension              | Enabled | Decision                                              |
 | ---------------------- | ------- | ----------------------------------------------------- |
-| Security Baseline      | No      | Business Youthful Color Refresh Requirements Analysis |
-| Property-Based Testing | No      | Business Youthful Color Refresh Requirements Analysis |
+| Security Baseline      | No      | Duc Tuan Requirements Analysis - Q2 B |
+| Property-Based Testing | No      | Duc Tuan Requirements Analysis - Q3 C |
 
 ## Active Stage Progress
 
@@ -72,3 +106,7 @@
 - Update active artifacts instead of creating duplicate revisions.
 - Keep application code at the workspace root and documentation under `aidlc-docs/`.
 - Keep `audit.md` append-only and complete.
+
+## Current Publication Finding
+
+Current source/output excludes private raw inputs and superseded owner assets. Existing Git history still contains the previous owner’s résumé and university document; history was not rewritten. No staging, commit, push, or deployment has occurred. See the public asset review and implementation summary for scope and limits.

@@ -1,13 +1,23 @@
-import type { AboutSection } from '../types/portfolio'
+import type { AboutSection } from "../types/portfolio";
 
-export const about = {
+export const about: AboutSection = {
   paragraphs: [
-    'I am a data engineer focused on designing efficient pipelines and analytics systems that turn raw data into trustworthy decision enablers. My work spans ingestion, modeling, orchestration, and data product delivery.',
-    'Outside engineering, I mentor students and support them in building confidence, academic skills and portfolios. Teaching and empowering others is my greatest passion and motivation.',
+    "I am a mathematics-specialized student at HUS High School for Gifted Students, Vietnam National University, Hanoi. I enjoy the moment when an abstract idea becomes a useful way of understanding the world.",
+    "That curiosity led me to music recommendation systems: how can a model find a song that feels similar, and how can we explain its choices? I also use analytical tools to investigate business questions, from production reporting to the relationship between discounting and profitability.",
+    "Outside the dataset, I play fingerstyle guitar and have contributed educational content to the HSGS English Club. Music and communication are part of how I think about human-centered technology.",
   ],
   metrics: [
-    { value: '4+', label: 'Years in Data and Software Engineering' },
-    { value: '5+', label: 'Years in Teaching and Mentoring' },
-    { value: '3+', label: 'Years Creating Educational Content' },
+    {
+      value: "Mathematics",
+      label: "Academic foundation",
+    },
+    {
+      value: "Explainable models",
+      label: "Learning direction",
+    },
+    {
+      value: "Fingerstyle guitar",
+      label: "Beyond the screen",
+    },
   ],
-} satisfies AboutSection
+};

@@ -1,3 +1,2 @@
 import type { PortfolioTemplateId } from "../templates/types";
-
-export const selectedTemplateId = "engineering" satisfies PortfolioTemplateId;
+export const selectedTemplateId = "business" satisfies PortfolioTemplateId;

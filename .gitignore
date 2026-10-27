@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Private portfolio source inputs; publish only reviewed certificate assets
+/src/assets/*.docx
+/src/assets/*.zip

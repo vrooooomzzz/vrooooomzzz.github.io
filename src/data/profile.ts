@@ -1,61 +1,49 @@
-import profileImage from '../assets/profile.jpeg'
-import resumePdf from '../assets/documents/resume.pdf'
-import type { HeroSection, Profile } from '../types/portfolio'
+import type { HeroSection, Profile } from "../types/portfolio";
 
-export const profile = {
-  name: 'Nham Quoc Hung',
-  slug: 'nham-quoc-hung',
-  role: 'Data Engineer at Torilab Inc.',
-  location: 'Hanoi Capital Region, Vietnam',
-  email: 'nhamhung.gttn@gmail.com',
-  profileImage,
-  resume: {
-    label: 'Download Resume',
-    href: resumePdf,
-    fileName: 'Nham-Quoc-Hung-Resume.pdf',
-    ariaLabel: 'Download Nham Quoc Hung resume PDF',
-  },
+export const profile: Profile = {
+  name: "Nguyễn Đức Tuấn",
+  slug: "nguyen-duc-tuan",
+  role: "Mathematics student · Data analytics",
+  location: "Hanoi, Vietnam",
   summary:
-    'I am a Computer Science graduate with a specialisation in Data and passion for teaching. In a world being increasingly influenced and shaped by technological advances, these domains are my way of navigating through present complexities and making sense of what is coming next.',
-  socialLinks: [
-    {
-      label: 'GitHub',
-      href: 'https://github.com/nhamhung',
-      ariaLabel: 'Open Nham Quoc Hung GitHub profile',
-    },
-    {
-      label: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/quoc-hung-nham/',
-      ariaLabel: 'Open Nham Quoc Hung LinkedIn profile',
-    },
-    {
-      label: 'Email',
-      href: 'mailto:nhamhung.gttn@gmail.com',
-      ariaLabel: 'Email Nham Quoc Hung',
-    },
-  ],
-} satisfies Profile
+    "I explore how mathematics and data can help us understand people, make better decisions, and discover something unexpected. My work connects music recommendation, machine learning, and business analytics.",
+  socialLinks: [],
+};
 
-export const hero = {
-  eyebrow: '<engineer id="nham-quoc-hung" />',
-  statusBadges: ['SYSTEM STATUS: BUILDING', 'DATA | SOFTWARE | MENTORSHIP'],
-  headline: 'Building reliable data pipelines and scalable data platforms.',
-  highlightedPhrase: 'data pipelines',
-  intro: profile.summary,
+export const hero: HeroSection = {
+  eyebrow: "DATA / MATHEMATICS / CURIOSITY",
+  statusBadges: ["HANOI, VIETNAM", "STUDENT ANALYST"],
+  headline: "Finding the human story in data.",
+  highlightedPhrase: "human story",
+  intro:
+    "I explore how mathematics and data can help us understand people, make better decisions, and discover something unexpected. My work connects music recommendation, machine learning, and business analytics.",
   stats: [
-    { value: '4+ Years', label: 'Experience' },
-    { value: 'Data + Teaching', label: 'Focus' },
-    { value: 'Everything Data-related', label: 'Coverage' },
+    {
+      value: "Music & behavior",
+      label: "Research interests",
+    },
+    {
+      value: "Python + SQL",
+      label: "Analytical toolkit",
+    },
+    {
+      value: "Class of 2027",
+      label: "Expected graduation",
+    },
   ],
   primaryAction: {
-    label: 'View Projects',
-    sectionId: 'projects',
-    ariaLabel: 'Scroll to selected projects',
+    label: "Explore my work",
+    sectionId: "projects",
+    ariaLabel: "Explore selected analytics projects",
   },
   secondaryAction: {
-    label: 'Contact',
-    sectionId: 'contact',
-    ariaLabel: 'Scroll to contact section',
+    label: "My background",
+    sectionId: "about",
+    ariaLabel: "Read about Duc Tuan",
   },
-  stackHighlights: ['Big Data', 'Data Analytics', 'Data Science', 'Data Engineering', 'Machine Learning', 'Deep Learning'],
-} satisfies HeroSection
+  stackHighlights: [
+    "Data exploration",
+    "Recommendation systems",
+    "Business intelligence",
+  ],
+};

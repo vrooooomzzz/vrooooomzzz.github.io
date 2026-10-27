@@ -16,12 +16,12 @@ import BusinessShell from "./BusinessShell";
 import BusinessSkills from "./BusinessSkills";
 
 export const businessChapterLabels = {
-  home: "Welcome",
+  home: "Overview",
   about: "My Story",
   education: "Education",
   experience: "Experience",
-  awards: "Highlights",
-  projects: "Projects",
+  awards: "Beyond data",
+  projects: "Selected work",
   gallery: "Gallery",
   journal: "Journal",
   skills: "Skills",
